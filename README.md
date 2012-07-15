@@ -11,15 +11,15 @@ If the script detects that the browser doesn't support `<input type="time">`, it
 
 ## Dependencies
 
-This script requires jQuery[http://jquery.com/] and Modernizr[http://www.modernizr.com/].
+This script requires [jQuery](http://jquery.com/) and [Modernizr](http://www.modernizr.com/).
 
 ## See also
 
 [Compatibility chart for input datetime elements](http://caniuse.com/input-datetime)
 
-* datetime-local-polyfill[https://github.com/jonstipe/datetime-local-polyfill]
-* datetime-polyfill[https://github.com/jonstipe/datetime-polyfill]
-* date-polyfill[https://github.com/jonstipe/date-polyfill]
+* [datetime-local-polyfill](https://github.com/jonstipe/datetime-local-polyfill)
+* [datetime-polyfill](https://github.com/jonstipe/datetime-polyfill)
+* [date-polyfill](https://github.com/jonstipe/date-polyfill)
 
 ## License (MIT)
 Copyright (c) 2012 Jonathan Stipe
