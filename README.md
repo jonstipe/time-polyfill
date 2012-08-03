@@ -4,7 +4,7 @@ This is a polyfill for implementing the HTML5 `<input type="time">` element in b
 
 ## Usage
 
-Using it is easy — simply include the `time-polyfill.js` file in the HEAD of the HTML page.  
+Using it is easy — simply include the `time-polyfill.min.js` file in the HEAD of the HTML page.  
 You can then use `<input type="time">` elements normally.
 
 If the script detects that the browser doesn't support `<input type="time">`, it will search for these elements and replace them with a normal text field with Javascript attached to make it function as a time selector. The time selection is stored in a hidden form field and submitted with the form in the standard format.
