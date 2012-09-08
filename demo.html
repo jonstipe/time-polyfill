@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>HTML5 Time polyfill</title>
+    <meta name="author" content="Jonathan Stipe" />
+    <meta name="copyright" content="&copy; 2012 Jonathan Stipe" />
+    <link rel="stylesheet" href="time-polyfill.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
+    <script type="text/javascript" src="time-polyfill.js"></script>
+    <script type="text/javascript">
+//<![CDATA[
+$(function() {
+  var dtElem = document.createElement("dt"),
+      ddElem = document.createElement("dd"),
+      inputElem = document.createElement("input");
+    dtElem.appendChild(document.createTextNode("Dynamically generated element"));
+    $(inputElem).attr({
+      type: 'time',
+      name: 'generatedElement',
+      value: '12:00',
+      min: '00:00',
+      max: '23:59'
+    });
+    ddElem.appendChild(inputElem);
+    $('dl').first().append(dtElem).append(ddElem);
+    $(inputElem).inputTime();
+});
+//]]>
+    </script>
+  </head>
+  <body>
+<form id="form-demo"> 
+<dl>
+<dt>time (with value, min, and max)</dt>
+<dd><input type="time" name="myTime0" value="12:00" min="00:00" max="23:59" /></dd>
+
+<dt>time (with value and max)</dt>
+<dd><input type="time" name="myTime1" value="12:00" max="23:59" /></dd>
+
+<dt>time (with value and min)</dt>
+<dd><input type="time" name="myTime2" value="12:00" min="00:00" /></dd>
+
+<dt>time (with value and step)</dt>
+<dd><input type="time" name="myTime3" value="12:00" step="60" /></dd>
+
+<dt>time (with value, min, max, and step)</dt>
+<dd><input type="time" name="myTime4" value="12:00" min="00:00" max="23:59" step="60" /></dd>
+
+<dt>time (with min and max)</dt>
+<dd><input type="time" name="myTime5" min="00:00" max="23:59" /></dd>
+
+<dt>time (with just min)</dt>
+<dd><input type="time" name="myTime6" min="00:00" /></dd>
+
+<dt>time (with just max)</dt>
+<dd><input type="time" name="myTime7" max="23:59" /></dd>
+
+<dt>time (with just step)</dt>
+<dd><input type="time" name="myTime8" step="60" /></dd>
+
+<dt>time (with min, max, and step)</dt>
+<dd><input type="time" name="myTime9" min="00:00" max="23:59" step="60" /></dd>
+
+<dt>time (with min and step)</dt>
+<dd><input type="time" name="myTime10" min="00:00" step="60" /></dd>
+
+<dt>time (with max and step)</dt>
+<dd><input type="time" name="myTime11" max="23:59" step="60" /></dd>
+
+<dt>time (with value, min, max, and step=any)</dt>
+<dd><input type="time" name="myTime12" value="12:00" min="00:00" max="23:59" step="any" /></dd>
+
+<dt>time (with value, max, and step=any)</dt>
+<dd><input type="time" name="myTime13" value="12:00" max="23:59" step="any" /></dd>
+
+<dt>time (with value, min, and step=any)</dt>
+<dd><input type="time" name="myTime14" value="12:00" min="00:00" step="any" /></dd>
+
+<dt>time (with max and step=any)</dt>
+<dd><input type="time" name="myTime15" max="23:59" step="any" /></dd>
+
+<dt>time (with min and step=any)</dt>
+<dd><input type="time" name="myTime16" min="00:00" step="any" /></dd>
+
+<dt>time (with step=any)</dt>
+<dd><input type="time" name="myTime17" step="any" /></dd>
+
+<dt>time (without anything)</dt>
+<dd><input type="time" name="myTime18" /></dd>
+</dl>
+<input type="submit" />
+</form>
+
+<a href="https://github.com/jonstipe/time-polyfill">Back to GitHub repo</a>
+</body>
+</html>

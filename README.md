@@ -9,9 +9,17 @@ You can then use `<input type="time">` elements normally.
 
 If the script detects that the browser doesn't support `<input type="time">`, it will search for these elements and replace them with a normal text field with Javascript attached to make it function as a time selector. The time selection is stored in a hidden form field and submitted with the form in the standard format.
 
+## Manual usage
+
+The script can also be called manually as a jQuery plugin for elements dynamically generated through script. Simply call the `.inputTime()` method on any jQuery object containing one or more `<input type="time">` elements.
+
 ## Dependencies
 
 This script requires [jQuery](http://jquery.com/) and [Modernizr](http://www.modernizr.com/).
+
+## Demo
+
+http://jonstipe.github.com/time-polyfill/demo.html
 
 ## See also
 
