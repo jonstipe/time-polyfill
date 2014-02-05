@@ -270,7 +270,7 @@ HTML5 Time polyfill | Jonathan Stipe | https://github.com/jonstipe/time-polyfill
             event.preventDefault();
             return null;
           },
-          keypress: function(event) {
+          keydown: function(event) {
             var _ref, _ref1;
             if (event.keyCode === 38) {
               increment(hiddenField, timeField);

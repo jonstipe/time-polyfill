@@ -207,7 +207,7 @@ HTML5 Time polyfill | Jonathan Stipe | https://github.com/jonstipe/time-polyfill
             decrement hiddenField, timeField
           event.preventDefault()
           null
-        keypress: (event) ->
+        keydown: (event) ->
           if event.keyCode == 38 # up arrow
             increment hiddenField, timeField
           else if event.keyCode == 40 # down arrow
