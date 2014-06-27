@@ -6,11 +6,10 @@
     <meta name="author" content="Jonathan Stipe" />
     <meta name="copyright" content="&copy; 2012 Jonathan Stipe" />
     <link rel="stylesheet" href="time-polyfill.css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
-    <script type="text/javascript" src="time-polyfill.js"></script>
-    <script type="text/javascript">
-//<![CDATA[
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="time-polyfill.js"></script>
+    <script>
 $(function() {
   var dtElem = document.createElement("dt"),
       ddElem = document.createElement("dd"),
@@ -27,7 +26,6 @@ $(function() {
     $('dl').first().append(dtElem).append(ddElem);
     $(inputElem).inputTime();
 });
-//]]>
     </script>
   </head>
   <body>
