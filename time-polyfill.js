@@ -373,7 +373,7 @@ HTML5 Time polyfill | Jonathan Stipe | https://github.com/jonstipe/time-polyfill
       return this;
     };
     $(function() {
-      if (!Modernizr.inputtypes.time) {
+      if (!Modernizr.time) {
         $('input[type="time"]').inputTime();
       }
       return null;
